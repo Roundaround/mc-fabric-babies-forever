@@ -3,7 +3,7 @@
   "id": "babiesforever",
   "version": "${version}",
   "name": "Babies Forever",
-  "description": "All named babies will stay babies forever!",
+  "description": "All named babies will stay babies forever!\n${library}",
   "authors": [
     "Roundaround"
   ],
@@ -25,7 +25,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.13.3",
-    "minecraft": "1.19.x",
+    "minecraft": ">=1.20-beta.1 <1.21",
     "java": ">=17"
   }
 }
