@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "babiesforever",
+  "id": "${modId}",
   "version": "${version}",
   "name": "Babies Forever",
   "description": "All named babies will stay babies forever!",
@@ -12,20 +12,5 @@
     "sources": "https://github.com/Roundaround/mc-fabric-babies-forever",
     "issues": "https://github.com/Roundaround/mc-fabric-babies-forever/issues"
   },
-  "license": "MIT",
-  "icon": "assets/babiesforever/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "me.roundaround.babiesforever.BabiesForeverMod"
-    ]
-  },
-  "mixins": [
-    "babiesforever.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.13.3",
-    "minecraft": "1.21.*",
-    "java": ">=17"
-  }
+  "license": "MIT"
 }
