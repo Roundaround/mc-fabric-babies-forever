@@ -1,7 +1,7 @@
 package me.roundaround.babiesforever;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.util.Formatting;
+import net.minecraft.ChatFormatting;
+import net.minecraft.world.entity.Entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +21,7 @@ public final class BabiesForeverMod implements ModInitializer {
     if (!entity.hasCustomName()) {
       return false;
     }
-    String name = Formatting.strip(entity.getName().getString()).toLowerCase(Locale.ROOT);
+    String name = ChatFormatting.stripFormatting(entity.getName().getString()).toLowerCase(Locale.ROOT);
     return "growup".equals(name) || "grow up".equals(name) || "grow_up".equals(name);
   }
 }
